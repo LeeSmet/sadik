@@ -20,7 +20,7 @@ impl Node {
         metastore_path: &Path,
         cluster_listen_addr: SocketAddr,
         public_addr: SocketAddr,
-        seeds: &[&str],
+        seeds: &[String],
     ) -> Result<Self, String> {
         let connection_cfg = ConnectionConfig::new(cluster_listen_addr, public_addr, seeds);
         let node = DatacakeNodeBuilder::<DCAwareSelector>::new(node_id, connection_cfg)

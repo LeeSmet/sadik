@@ -16,6 +16,7 @@ keywords = ["s3", "distributed", "storage"]
 path = "src/lib.rs"
 
 [dependencies]
+clap = { version = "4.4.7", features = ["derive"] }
 datacake = { version = "0.7.1", features = ["rkyv", "datacake-lmdb"] }
 s3s = "0.8.0"
 tokio = { version = "1.33.0", features = ["full"] }
