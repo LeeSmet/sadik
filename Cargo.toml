@@ -13,3 +13,6 @@ keywords = ["s3", "distributed", "storage"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+datacake = { version = "0.7.1", features = ["rkyv"] }
+s3s = "0.8.0"
+tokio = { version = "1.33.0", features = ["full"] }
